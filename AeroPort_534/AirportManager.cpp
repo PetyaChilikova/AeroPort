@@ -48,6 +48,17 @@ std::shared_ptr<User> AirportManager::getCurrentUser() const {
 	return currentUser;
 }
 
+void AirportManager::addUser(const std::shared_ptr<User>& user) {
+	if (user) {
+		allUsers.push_back(user);
+	}
+}
+
+void AirportManager::clearUsers() {
+	allUsers.clear();
+	currentUser = nullptr; 
+}
+
 void AirportManager::setCurrentUser(std::shared_ptr<User> user) {
 	currentUser = user;
 }
@@ -145,6 +156,10 @@ std::shared_ptr<Airline> AirportManager::findAirlineByAircraft(int aircraftId) c
 		}
 	}
 	return nullptr;
+}
+
+const std::vector<std::shared_ptr<User>>& AirportManager::getAllUsers() const {
+	return allUsers;
 }
 
 const std::vector<std::shared_ptr<Flight>>& AirportManager::getAllFlights() const {

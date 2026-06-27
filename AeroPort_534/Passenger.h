@@ -23,4 +23,7 @@ public:
 
 	void viewProfile() const override;
 	void help() const override;
+
+	void serialize(std::ofstream& out) const override;
+	void deserialize(std::ifstream& in) override;
 };

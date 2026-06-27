@@ -35,6 +35,8 @@ public:
 	void run();
 
 	std::shared_ptr<User> getCurrentUser() const;
+	void clearUsers();
+	void addUser(const std::shared_ptr<User>& user);
 	void setCurrentUser(std::shared_ptr<User> user);
 
 	void registerUser(std::shared_ptr<User> user);
@@ -51,6 +53,7 @@ public:
 	std::shared_ptr<Aircraft> findAircraftGlobal(int id) const;
 	std::shared_ptr<Airline> findAirlineByAircraft(int aircraftId) const;
 
+	const std::vector<std::shared_ptr<User>>& getAllUsers() const;
 	const std::vector<std::shared_ptr<Flight>>& getAllFlights() const;
 	const std::vector<std::shared_ptr<Runway>>& getAllRunways() const;
 	const std::vector<std::shared_ptr<Hangar>>& getAllHangars() const;

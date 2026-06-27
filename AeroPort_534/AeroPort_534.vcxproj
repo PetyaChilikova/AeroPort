@@ -148,6 +148,7 @@
     <ClCompile Include="ListAirspaceCmd.cpp" />
     <ClCompile Include="ListFleetCmd.cpp" />
     <ClCompile Include="ListRunwaysCmd.cpp" />
+    <ClCompile Include="LoadCmd.cpp" />
     <ClCompile Include="LoginCmd.cpp" />
     <ClCompile Include="LogoutCmd.cpp" />
     <ClCompile Include="Passenger.cpp" />
@@ -157,8 +158,10 @@
     <ClCompile Include="RegisterCmd.cpp" />
     <ClCompile Include="RetrieveFromHangar.cpp" />
     <ClCompile Include="Runway.cpp" />
+    <ClCompile Include="SaveCmd.cpp" />
     <ClCompile Include="ScheduleFlightCmd.cpp" />
     <ClCompile Include="SendToHangarCmd.cpp" />
+    <ClCompile Include="SetWeatherCmd.cpp" />
     <ClCompile Include="StandardTicket.cpp" />
     <ClCompile Include="Ticket.cpp" />
     <ClCompile Include="TicketFactory.cpp" />
@@ -194,6 +197,7 @@
     <ClInclude Include="ListAirspaceCmd.h" />
     <ClInclude Include="ListFleetCmd.h" />
     <ClInclude Include="ListRunwaysCmd.h" />
+    <ClInclude Include="LoadCmd.h" />
     <ClInclude Include="LoginCmd.h" />
     <ClInclude Include="LogoutCmd.h" />
     <ClInclude Include="Passenger.h" />
@@ -203,8 +207,10 @@
     <ClInclude Include="RegisterCmd.h" />
     <ClInclude Include="RetrieveFromHangarCmd.h" />
     <ClInclude Include="Runway.h" />
+    <ClInclude Include="SaveCmd.h" />
     <ClInclude Include="ScheduleFlightCmd.h" />
     <ClInclude Include="SendToHangarCmd.h" />
+    <ClInclude Include="SetWeatherCmd.h" />
     <ClInclude Include="StandardTicket.h" />
     <ClInclude Include="Ticket.h" />
     <ClInclude Include="TicketFactory.h" />

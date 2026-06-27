@@ -4,6 +4,8 @@
 #include "LogoutCmd.h"
 #include "ViewProfileCmd.h"
 #include "HelpCmd.h"
+#include "SaveCmd.h"
+#include "LoadCmd.h"
 #include "BuildRunwayCmd.h"
 #include "BuildHangarCmd.h"
 #include "RegisterAirlineCmd.h"
@@ -21,6 +23,7 @@
 #include "ListFleetCmd.h"
 #include "CancelFlightCmd.h"
 #include "CloneAircraftCmd.h"
+#include "SetWeatherCmd.h"
 
 std::shared_ptr<Command> CommandFactory::createCommand(const std::string& name, std::stringstream& ss) {
     if (name == "login") return std::make_shared<LoginCmd>(ss);
@@ -28,6 +31,8 @@ std::shared_ptr<Command> CommandFactory::createCommand(const std::string& name, 
     else if (name == "logout") return std::make_shared<LogoutCmd>(ss);
     else if (name == "view-profile") return std::make_shared<ViewProfileCmd>(ss);
     else if (name == "help") return std::make_shared<HelpCmd>(ss);
+    else if (name == "save") return std::make_shared<SaveCmd>(ss);
+    else if (name == "load") return std::make_shared<LoadCmd>(ss);
     else if (name == "build-runway") return std::make_shared<BuildRunwayCmd>(ss);
     else if (name == "build-hangar") return std::make_shared<BuildHangarCmd>(ss);
     else if (name == "register-airline") return std::make_shared<RegisterAirlineCmd>(ss);
@@ -45,6 +50,7 @@ std::shared_ptr<Command> CommandFactory::createCommand(const std::string& name, 
     else if (name == "list-fleet") return std::make_shared<ListFleetCmd>(ss);
     else if (name == "cancel-flight") return std::make_shared<CancelFlightCmd>(ss);
     else if (name == "clone-aircraft") return std::make_shared<CloneAircraftCmd>(ss);
+    else if (name == "set-weather") return std::make_shared<SetWeatherCmd>(ss);
   
     return nullptr;
 }

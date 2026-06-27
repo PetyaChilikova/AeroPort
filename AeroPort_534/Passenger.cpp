@@ -1,4 +1,5 @@
 #include "Passenger.h"
+#include <fstream>
 #include <algorithm>
 #include <iomanip>
 
@@ -80,4 +81,20 @@ void Passenger::help() const {
 		<< "my-tickets – \"command description\"\n"
 		<< "view-profile – \"command description\"\n"
 		<< "logout – \"command description\"\n";
+}
+
+void Passenger::serialize(std::ofstream& out) const {
+	User::serialize(out); 
+	out.write(reinterpret_cast<const char*>(&balance), sizeof(balance));
+
+	size_t ticketCnt = tickets.size();
+	out.write(reinterpret_cast<const char*>(&ticketCnt), sizeof(ticketCnt));
+}
+
+void Passenger::deserialize(std::ifstream& in) {
+	User::deserialize(in); 
+	in.read(reinterpret_cast<char*>(&balance), sizeof(balance));
+
+	size_t ticketCnt;
+	in.read(reinterpret_cast<char*>(&ticketCnt), sizeof(ticketCnt));
 }

@@ -27,4 +27,7 @@ public:
 	void logout();
 	virtual void viewProfile() const = 0;
 	virtual void help() const = 0;
+
+	virtual void serialize(std::ofstream& out) const;
+	virtual void deserialize(std::ifstream& in);
 };
