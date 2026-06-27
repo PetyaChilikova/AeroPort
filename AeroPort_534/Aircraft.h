@@ -26,4 +26,5 @@ public:
 	double getHealth() const;
 	void repair();
 	bool canFly() const;
+	void setId(int newId);
 };

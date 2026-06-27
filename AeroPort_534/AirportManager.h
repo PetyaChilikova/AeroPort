@@ -53,6 +53,7 @@ public:
 
 	const std::vector<std::shared_ptr<Flight>>& getAllFlights() const;
 	const std::vector<std::shared_ptr<Runway>>& getAllRunways() const;
+	const std::vector<std::shared_ptr<Hangar>>& getAllHangars() const;
 
 	void pushCommand(std::shared_ptr<Command> cmd);
 	void popAndUndo();

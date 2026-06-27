@@ -29,3 +29,7 @@ void Aircraft::repair() {
 bool Aircraft::canFly() const {
 	return health >= 20.0;
 }
+
+void Aircraft::setId(int newId) {
+	this->id = newId;
+}

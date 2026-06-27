@@ -155,6 +155,10 @@ const std::vector<std::shared_ptr<Runway>>& AirportManager::getAllRunways() cons
 	return allRunways;
 }
 
+const std::vector<std::shared_ptr<Hangar>>& AirportManager::getAllHangars() const {
+	return allHangars;
+}
+
 void AirportManager::pushCommand(std::shared_ptr<Command> cmd) {
 	commandHistory.push(cmd);
 }

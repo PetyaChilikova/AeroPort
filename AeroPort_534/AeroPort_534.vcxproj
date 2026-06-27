@@ -133,7 +133,10 @@
     <ClCompile Include="BuildHangarCmd.cpp" />
     <ClCompile Include="BuildRunwayCmd.cpp" />
     <ClCompile Include="BuyAircraftCmd.cpp" />
+    <ClCompile Include="CancelFlightCmd.cpp" />
     <ClCompile Include="CargoPlane.cpp" />
+    <ClCompile Include="CloneAircraftCmd.cpp" />
+    <ClCompile Include="CloseRunwayCmd.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="DelayFlightCmd.cpp" />
     <ClCompile Include="Dispatcher.cpp" />
@@ -143,6 +146,7 @@
     <ClCompile Include="HelpCmd.cpp" />
     <ClCompile Include="LastMinuteTicket.cpp" />
     <ClCompile Include="ListAirspaceCmd.cpp" />
+    <ClCompile Include="ListFleetCmd.cpp" />
     <ClCompile Include="ListRunwaysCmd.cpp" />
     <ClCompile Include="LoginCmd.cpp" />
     <ClCompile Include="LogoutCmd.cpp" />
@@ -151,8 +155,10 @@
     <ClCompile Include="PrivateJet.cpp" />
     <ClCompile Include="RegisterAirlineCmd.cpp" />
     <ClCompile Include="RegisterCmd.cpp" />
+    <ClCompile Include="RetrieveFromHangar.cpp" />
     <ClCompile Include="Runway.cpp" />
     <ClCompile Include="ScheduleFlightCmd.cpp" />
+    <ClCompile Include="SendToHangarCmd.cpp" />
     <ClCompile Include="StandardTicket.cpp" />
     <ClCompile Include="Ticket.cpp" />
     <ClCompile Include="TicketFactory.cpp" />
@@ -172,7 +178,10 @@
     <ClInclude Include="BuildHangarCmd.h" />
     <ClInclude Include="BuildRunwayCmd.h" />
     <ClInclude Include="BuyAircraftCmd.h" />
+    <ClInclude Include="CancelFlightCmd.h" />
     <ClInclude Include="CargoPlane.h" />
+    <ClInclude Include="CloneAircraftCmd.h" />
+    <ClInclude Include="CloseRunwayCmd.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandFactory.h" />
     <ClInclude Include="DelayFlightCmd.h" />
@@ -183,6 +192,7 @@
     <ClInclude Include="HelpCmd.h" />
     <ClInclude Include="LastMinuteTicket.h" />
     <ClInclude Include="ListAirspaceCmd.h" />
+    <ClInclude Include="ListFleetCmd.h" />
     <ClInclude Include="ListRunwaysCmd.h" />
     <ClInclude Include="LoginCmd.h" />
     <ClInclude Include="LogoutCmd.h" />
@@ -191,8 +201,10 @@
     <ClInclude Include="PrivateJet.h" />
     <ClInclude Include="RegisterAirlineCmd.h" />
     <ClInclude Include="RegisterCmd.h" />
+    <ClInclude Include="RetrieveFromHangarCmd.h" />
     <ClInclude Include="Runway.h" />
     <ClInclude Include="ScheduleFlightCmd.h" />
+    <ClInclude Include="SendToHangarCmd.h" />
     <ClInclude Include="StandardTicket.h" />
     <ClInclude Include="Ticket.h" />
     <ClInclude Include="TicketFactory.h" />

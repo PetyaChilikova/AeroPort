@@ -64,12 +64,7 @@ void Runway::releaseRunway() {
 
 void Runway::setMaintenance(bool needsMaintenance) {
 	if (needsMaintenance) {
-		if (status == RunwayStatus::Free) {
-			status = RunwayStatus::Maintenance;
-		}
-		else if (status == RunwayStatus::Occupied) {
-			std::cout << "Error: you cannot start until there is an aircraft!!!" << std::endl;
-		}
+		status = RunwayStatus::Maintenance;
 	}
 	else {
 		if (status == RunwayStatus::Maintenance) {
